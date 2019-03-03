@@ -1,0 +1,64 @@
+Top Ten:
+
+https://abcnews.go.com/US/nasa-ends-mission-mars-rover-opportunity-15-years/story?id=61046744
+9.2
+
+https://www.express.co.uk/news/science/1087755/Nasa-opportunity-mars-rover-last-message-opportunity-last-words
+8.5
+
+https://www.cbc.ca/news/technology/mars-opportunity-rover-dead-1.5018038
+8.7
+
+https://www.nationalgeographic.com/science/2019/02/nasa-mars-rover-opportunity-dead-what-it-gave-humankind/
+8.9
+
+https://www.express.co.uk/news/science/1087904/nasa-opportunity-dead-last-words-mars-rover-dies-twitter
+8.5
+
+https://motherboard.vice.com/en_us/article/pank98/nasas-mars-opportunity-rover-is-likely-dead
+8.5
+
+https://www.express.co.uk/news/science/1088018/nasa-opportunity-rover-elon-musk-spacex-rescue-mars-rover
+8.5
+
+https://www.space.com/mars-rover-opportunity-declared-dead.html
+8.5
+
+https://www.space.com/mars-rovers-opportunity-spirit-change-exploration.html?utm_source=twitter&utm_medium=social&utm_campaign=dlvr.it
+8.5
+
+https://www.dictionary.com/browse/opportunity
+8.6
+
+Ten Random INORDER:
+
+0.0967   0.00631       15.3     https://www.nytimes.com/2019/02/13/science/mars-opportunity-rover-dead.html
+9.5
+
+0.0579   0.00378       15.3     https://www.instagram.com/p/Bt17XZ9nepQ/?utm_source=ig_twitter_share&igshid=1gesysiz1upgb
+10.0
+
+0.0126   0.000824       15.3     https://phys.org/news/2017-05-nasa-psyche-mission-metal-asteroid.html
+8.5
+
+0.151   0.00984       15.3     https://motherboard.vice.com/en_us/article/pank98/nasas-mars-opportunity-rover-is-likely-dead
+8.5
+
+0.022   0.00144       15.3     https://futurism.com/nasa-goodbye-opportunity-mars-rover
+7.5
+
+0.0234   0.00153       15.3     http://www.diariotecnologia.es/la-nasa-da-por-terminada-la-mision-de-opportunity
+2.5
+
+0.0196   0.00128       15.3     http://ceaselessfascination.tumblr.com/post/182794394513/the-opportunity-to-rove-on-mars#_=_
+3.7
+
+0.05   0.00326       15.3     https://ascienceenthusiast.com/mars-opportunity-rover-officially-dead/
+4.0
+
+0.0692   0.00451       15.3     https://arstechnica.com/science/2019/02/opportunity-did-not-answer-nasas-final-call-and-its-now-gone-to-us/
+8.9
+
+0.03   0.00196       15.3     https://myfox8.com/2019/02/13/nasas-opportunity-rover-dies-on-mars/
+6.7
+

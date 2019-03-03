@@ -1,0 +1,413 @@
+\documentclass{article}
+
+\usepackage{fancyhdr}
+\usepackage{extramarks}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+\usepackage{tikz}
+%\usepackage[plain]{algorithm}
+%\usepackage{algpseudocode}
+\usepackage{mdframed}
+\usepackage{listings}
+\usepackage{color}
+ 
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{1,1,1}
+
+\usetikzlibrary{automata,positioning}
+
+%
+% Basic Document Settings
+%
+
+\topmargin=-0.45in
+\evensidemargin=0in
+\oddsidemargin=0in
+\textwidth=6.5in
+\textheight=9.0in
+\headsep=0.25in
+
+\linespread{1.1}
+
+\pagestyle{fancy}
+\lhead{\hmwkAuthorName}
+\chead{\hmwkClass\ (\hmwkClassInstructor\ \hmwkClassTime): \hmwkTitle}
+\rhead{\firstxmark}
+\lfoot{\lastxmark}
+\cfoot{\thepage}
+
+\renewcommand\headrulewidth{0.4pt}
+\renewcommand\footrulewidth{0.4pt}
+
+\setlength\parindent{0pt}
+
+%
+% Create Problem Sections
+%
+
+\newcommand{\enterProblemHeader}[1]{
+    \nobreak\extramarks{}{Problem \arabic{#1} continued on next page\ldots}\nobreak{}
+    \nobreak\extramarks{Problem \arabic{#1} (continued)}{Problem \arabic{#1} continued on next page\ldots}\nobreak{}
+}
+
+\newcommand{\exitProblemHeader}[1]{
+    \nobreak\extramarks{Problem \arabic{#1} (continued)}{Problem \arabic{#1} continued on next page\ldots}\nobreak{}
+    \stepcounter{#1}
+    \nobreak\extramarks{Problem \arabic{#1}}{}\nobreak{}
+}
+
+\setcounter{secnumdepth}{0}
+\newcounter{partCounter}
+\newcounter{homeworkProblemCounter}
+\setcounter{homeworkProblemCounter}{1}
+\nobreak\extramarks{Problem \arabic{homeworkProblemCounter}}{}\nobreak{}
+
+%
+% Homework Problem Environment
+%
+% This environment takes an optional argument. When given, it will adjust the
+% problem counter. This is useful for when the problems given for your
+% assignment aren't sequential. See the last 3 problems of this template for an
+% example.
+%
+
+%augmented matrix not part of original template
+\makeatletter
+\renewcommand*\env@matrix[1][*\c@MaxMatrixCols c]{%
+   \hskip -\arraycolsep
+   \let\@ifnextchar\new@ifnextchar
+   \array{#1}}
+\makeatother
+
+\newenvironment{homeworkProblem}[1][-1]{
+    \ifnum#1>0
+        \setcounter{homeworkProblemCounter}{#1}
+    \fi
+    \section{Problem \arabic{homeworkProblemCounter}}
+    \setcounter{partCounter}{1}
+    \enterProblemHeader{homeworkProblemCounter}
+}{
+    \exitProblemHeader{homeworkProblemCounter}
+}
+
+%
+% Homework Details
+%   - Title
+%   - Due date
+%   - Class
+%   - Section/Time
+%   - Instructor
+%   - Author
+%
+
+\newcommand{\hmwkTitle}{Homework\ Number\ Three}
+\newcommand{\hmwkDueDate}{Febuary 14, 2018}
+\newcommand{\hmwkClass}{CS\ 432}
+\newcommand{\hmwkClassTime}{}
+\newcommand{\hmwkClassInstructor}{Alexander Nwala}
+\newcommand{\hmwkAuthorName}{\textbf{Tim Bruce}}
+
+%
+% Title Page
+%
+
+\title{
+    \vspace{2in}
+    \textmd{\textbf{\hmwkClass:\ \hmwkTitle}}\\
+    \normalsize\vspace{0.1in}\small{Due\ on\ \hmwkDueDate\ at 4:20 PM}\\
+    \vspace{0.1in}\large{\textit{\hmwkClassInstructor\ \hmwkClassTime}}
+    \vspace{3in}
+}
+
+\author{\hmwkAuthorName}
+\date{}
+
+\renewcommand{\part}[1]{\textbf{\large Part \Alph{partCounter}}\stepcounter{partCounter}\\}
+
+%
+% Various Helper Commands
+%
+
+% Useful for algorithms
+\newcommand{\alg}[1]{\textsc{\bfseries \footnotesize #1}}
+
+% For derivatives
+\newcommand{\deriv}[1]{\frac{\mathrm{d}}{\mathrm{d}x} (#1)}
+
+% For partial derivatives
+\newcommand{\pderiv}[2]{\frac{\partial}{\partial #1} (#2)}
+
+% Integral dx
+\newcommand{\dx}{\mathrm{d}x}
+
+% Alias for the Solution section header
+\newcommand{\solution}{\textbf{\large Solution}}
+
+% Probability commands: Expectation, Variance, Covariance, Bias
+\newcommand{\E}{\mathrm{E}}
+\newcommand{\Var}{\mathrm{Var}}
+\newcommand{\Cov}{\mathrm{Cov}}
+\newcommand{\Bias}{\mathrm{Bias}}
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{red},
+    keywordstyle=\color{orange},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codegreen},
+    basicstyle=\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+
+\lstset{style=mystyle}
+
+
+\begin{document}
+
+\maketitle
+\pagebreak
+
+\begin{homeworkProblem}
+Download the 1000 URIs from assignment \#2.  "curl", "wget", or
+"lynx" are all good candidate programs to use.  We want just the
+raw HTML, not the images, stylesheets, etc.
+
+Now use a tool to remove (most) of the HTML markup for all 1000 HTML documents.
+\newline
+\newline
+\textbf{Solution} \newline
+This part was fairly easy to do by reusing older code. First, the links were pulled line by line. Then for each link, the html was pulled using the exact same function that was used in the first homework.
+
+\begin{center}
+    Listing 1: Code to pull get html code from links.
+\begin{mdframed}
+\lstinputlisting[language=Python]{getHtml.py}
+\end{mdframed}
+\end{center}
+
+Next, the raw html code is turned in to (hopefully) mostly plain text. At time of writing this is done using beatuifulsoup. Beautifulsoup is used because of difficulties with boilerpipe.
+Finally, the link, raw html, and the parsed text is put into a dictionary entry together in the manner shown below, and then everything is put into a JSON file.
+
+\begin{center}
+    Listing 2: Code to put the html code into a dictionary.
+\begin{mdframed}
+\lstinputlisting[language=Python]{htmlCodeDump.py}
+\end{mdframed}
+\end{center}
+
+\end{homeworkProblem}
+
+\begin{homeworkProblem}
+Choose a query term (e.g., "shadow") that is not a stop word
+(see week 5 slides) and not HTML markup from step 1 (e.g., "http")
+that matches at least 10 documents (hint: use "grep" on the processed
+files).  If the term is present in more than 10 documents, choose
+any 10 from your list.  (If you do not end up with a list of 10
+URIs, you've done something wrong).
+
+As per the example in the week 5 slides, compute TFIDF values for
+the term in each of the 10 documents and create a table with the
+TF, IDF, and TFIDF values, as well as the corresponding URIs.  The
+URIs will be ranked in decreasing order by TFIDF values.  For
+example:
+
+Table 1. 10 Hits for the term "shadow", ranked by TFIDF.
+
+\begin{verbatim}
+TFIDF	TF	IDF	URI
+-----	--	---	---
+0.150	0.014	10.680	http://foo.com/
+0.044	0.008	10.680	http://bar.com/
+\end{verbatim}
+
+You can use Google or Bing for the DF estimation.  To count the
+number of words in the processed document (i.e., the deonminator
+for TF), you can use "wc":
+\begin{verbatim}
+    % wc -w www.cnn.com.processed
+    2370 www.cnn.com.processed
+\end{verbatim}
+
+
+It won't be completely accurate, but it will be probably be
+consistently inaccurate across all files.  You can use more 
+accurate methods if you'd like, just explain how you did it.  
+\newline \newline
+\textbf{Solution} \newline
+I was able to search the document for a word and get a search term count using the string.split method in Python. This returns the indices of instances of a matching string. Using this I was able to calculate the TF of a term in the following way.
+
+\begin{center}
+    Listing 3: Code to calculate TF and TF-IDF.
+\begin{mdframed}
+\lstinputlisting[language=Python]{calcTF.py}
+\end{mdframed}
+\end{center}
+
+The IDF value is a little bit more controversial in my mind. The assignment states that we can use the Google search results to calculate the IDF value, but this number is useless without the number of total pages that Google can link to. The "how Google search works" page claims that Google has over 130 trillion possible results, so that is the number I went with. It would be easy to just use the IDF from the sample data, and I'm not sure why the assignment does not just do that.
+\newline
+From this point it was fairly simple to write a function that picked ten of them at random that matched the search result and to write out the data about them. As an aside, I also made a sorter to get the top 12 values. I picked the number 12 because one of them was a repeat with a source tag and because one of them was following a redirect because the page had become a 404 since I first retrieved it. The results shown are from this sorting.
+
+\begin{center}
+    Listing 4: Output from the program. Links are long, sorry about the text wrapping.
+\begin{mdframed}
+\begin{lstlisting}
+TFIDF   TF          IDF         URI
+-----   --          ---         ---
+7.66   0.5       15.3     http://www.topnewstrends.tk/2019/02/nasa-calls-time-on-silent-opportunity.html
+0.356   0.0232       15.3     https://abcnews.go.com/US/nasa-ends-mission-mars-rover-opportunity-15-years/story?id=61046744
+0.356   0.0232       15.3     https://abcnews.go.com/US/nasa-ends-mission-mars-rover-opportunity-15-years/story?id=61046744&cid=social_twitter_abcn
+0.288   0.0188       15.3     https://www.express.co.uk/news/science/1087755/Nasa-opportunity-mars-rover-last-message-opportunity-last-words
+0.214   0.014       15.3     https://www.cbc.ca/news/technology/mars-opportunity-rover-dead-1.5018038
+0.214   0.0139       15.3     https://www.nationalgeographic.com/science/2019/02/nasa-mars-rover-opportunity-dead-what-it-gave-humankind/
+0.158   0.0103       15.3     https://www.express.co.uk/news/science/1087904/nasa-opportunity-dead-last-words-mars-rover-dies-twitter
+0.151   0.00984       15.3     https://motherboard.vice.com/en_us/article/pank98/nasas-mars-opportunity-rover-is-likely-dead
+0.15   0.00981       15.3     https://www.express.co.uk/news/science/1088018/nasa-opportunity-rover-elon-musk-spacex-rescue-mars-rover
+0.124   0.00812       15.3     https://www.space.com/mars-rover-opportunity-declared-dead.html
+0.123   0.00805       15.3     https://www.space.com/mars-rovers-opportunity-spirit-change-exploration.html?
+\end{lstlisting}
+\end{mdframed}
+\end{center}
+
+\end{homeworkProblem}
+
+\begin{homeworkProblem}
+Now rank the same 10 URIs from question #2, but this time 
+by their PageRank.  Use any of the free PR estimaters on the web,
+such as:
+\begin{verbatim}
+http://pr.eyedomain.com/
+http://www.prchecker.info/check_page_rank.php
+http://www.seocentro.com/tools/search-engines/pagerank.html
+http://www.checkpagerank.net/
+\end{verbatim}
+
+If you use these tools, you'll have to do so by hand (they have
+anti-bot captchas), but there are only 10 to do.  Normalize the
+values they give you to be from 0 to 1.0.  Use the same tool on all
+10 (again, consistency is more important than accuracy).  Also
+note that these tools typically report on the domain rather than
+the page, so it's not entirely accurate.  
+
+Create a table similar to Table 1:
+
+Table 2.  10 hits for the term "shadow", ranked by PageRank.
+
+\begin{verbatim}
+PageRank    URI
+--------    ---
+0.9	        http://bar.com/
+0.5	        http://foo.com/
+\end{verbatim}
+
+Briefly compare and contrast the rankings produced in questions 2
+and 3.
+\newline \newline
+\textbf{Solution} \newline
+The annoying thing about this problem is that these PageRank websites only really work for the homepage, so I really feel that their input is completely worthless, because most of my links are articles and my keyword is kinda specific. \newline
+Once I got the PageRank from http://pr.eyedomain.com/ because it gives more significant figures, I got the following output:
+
+\begin{center}
+    Listing 5: PageRank of top 10 TF-IDF values in order of TF-IDF rank.
+\begin{mdframed}
+\begin{verbatim}
+PageRank    URI
+--------    ---
+9.2         https://abcnews.go.com/
+8.5         https://express.co.uk/
+8.7         https://www.cbc.ca/
+8.9         https://www.nationalgeographic.com/
+8.5         https://www.express.co.uk/
+8.5         https://motherboard.vice.com/
+8.5         https://www.express.co.uk/
+8.5         https://www.space.com/
+8.5         https://www.space.com/
+8.6         https://www.dictionary.com/
+\end{verbatim}
+\end{mdframed}
+\end{center}
+
+While these do trend downwards, the information gained here is anecdotal at best due to our low sample size. abcnews.go.com is on top of both rankings. This may have to do with ABC really understanding how the internet ranking system works down to a fundamental level in their article writing. Because they are targeting the search term "Opportunity" and say it a lot, it appears at the top of the TF-IDF list. This would mean its fundamental understanding of this has made it a highly linked-to page. The same can be said down the board. The repeat top-level domains are all clustered together in TF-IDF due to how they write articles, and it may show how well they do this in their page rankings.
+
+\end{homeworkProblem}
+
+\begin{homeworkProblem}
+Compute the Kendall Tau\_b score for both lists (use "b" because
+there will likely be tie values in the rankings).  Report both the
+Tau value and the "p" value.
+\newline \newline
+\textbf{Solution} \newline
+For this question, I was able to use the SciPy library, which has a Kendall Tau\_b function in it, that made this really easy. I hand inputted the values in arrays like so:
+
+\begin{center}
+    Listing 6: Kendall Tau Calculator for TF-IDF and PageRank.
+\begin{mdframed}
+\lstinputlisting[language=Python]{tf-idffun.py}
+\end{mdframed}
+\end{center}
+
+This method produces the following output:
+
+\begin{center}
+    Listing 7: Kendall Tau\_b for the TF-IDF and PageRank scores of ten web pages.
+\begin{mdframed}
+\begin{verbatim}
+FOR TFIDF AND PAGERANK
+KendalltauResult(correlation=0.3578132236660672, pvalue=0.18457255283988294)
+\end{verbatim}
+\end{mdframed}
+\end{center}
+
+This low correlation is probably once again due to the lack of relatedness between the two topics. One of the numbers is an iffy aggregate for the top-level domain, and the other is a search ranking for a specific term using a low sized and biased sample set of data. The correlation is probably due to a relationship between the page ranking and how these websites present their data.
+
+\end{homeworkProblem}
+
+\begin{homeworkProblem}
+Compute a ranking for the 10 URIs from Q2 using Alexa information
+(see week 4 slides).  Compute the correlation (as per Q4) for all
+pairs of combinations for TFIDF, PR, and Alexa.
+
+\newline \newline
+\textbf{Solution} \newline
+I was able to retrieve Alexa scores from January 31st, 2019 from https://www.rank2traffic.com, which made it a lot easier than from the official source. Doing this, I was able to reuse some of the code from the last part, you will note the similarities:
+
+\begin{center}
+    Listing 8: Kendall Tau Calculator for TF-IDF, PageRank, and Alexa.
+\begin{mdframed}
+\lstinputlisting[language=Python]{withAlexa.py}
+\end{mdframed}
+\end{center}
+
+The output from this code was:
+
+\begin{center}
+    Listing 9: Kendall Tau\_b for the TF-IDF and PageRank scores of ten web pages.
+\begin{mdframed}
+\begin{verbatim}
+FOR TFIDF AND PAGERANK
+KendalltauResult(correlation=0.3578132236660672, pvalue=0.18457255283988294)
+FOR TFIDF AND alexa
+KendalltauResult(correlation=0.09417632186960223, pvalue=0.714342227424899)
+FOR alexa AND PAGERANK
+KendalltauResult(correlation=0.22810637940488043, pvalue=0.40790488230961974)
+\end{verbatim}
+\end{mdframed}
+\end{center}
+
+This is actually quite interesting! I used the top-level domains for the Alexa score, and the PageRank-tf-idf correlation still had more similarity than the PageRank-Alexa. This indicates to me that the PageRank and Alexa scores are fundamentally different, and TF-IDF is closer to PageRank... or our sample size is too low for useful analysis.
+\end{homeworkProblem}
+
+\bibliographystyle{apalike}
+\bibliography{bibliography.bib}
+\end{document}

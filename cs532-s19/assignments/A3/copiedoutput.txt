@@ -1,0 +1,24 @@
+tim@Hero-Daedalus:~/Desktop/CS432/A3$ ./A3.py 
+TFIDF   TF          IDF         URI
+-----   --          ---         ---
+7.66   0.5       15.3     http://www.topnewstrends.tk/2019/02/nasa-calls-time-on-silent-opportunity.html
+0.356   0.0232       15.3     https://abcnews.go.com/US/nasa-ends-mission-mars-rover-opportunity-15-years/story?id=61046744
+0.356   0.0232       15.3     https://abcnews.go.com/US/nasa-ends-mission-mars-rover-opportunity-15-years/story?id=61046744&cid=social_twitter_abcn
+0.288   0.0188       15.3     https://www.express.co.uk/news/science/1087755/Nasa-opportunity-mars-rover-last-message-opportunity-last-words
+0.214   0.014       15.3     https://www.cbc.ca/news/technology/mars-opportunity-rover-dead-1.5018038
+0.214   0.0139       15.3     https://www.nationalgeographic.com/science/2019/02/nasa-mars-rover-opportunity-dead-what-it-gave-humankind/
+0.158   0.0103       15.3     https://www.express.co.uk/news/science/1087904/nasa-opportunity-dead-last-words-mars-rover-dies-twitter
+0.151   0.00984       15.3     https://motherboard.vice.com/en_us/article/pank98/nasas-mars-opportunity-rover-is-likely-dead
+0.15   0.00981       15.3     https://www.express.co.uk/news/science/1088018/nasa-opportunity-rover-elon-musk-spacex-rescue-mars-rover
+0.124   0.00812       15.3     https://www.space.com/mars-rover-opportunity-declared-dead.html
+0.123   0.00805       15.3     https://www.space.com/mars-rovers-opportunity-spirit-change-exploration.html?utm_source=twitter&utm_medium=social&utm_campaign=dlvr.it
+0.114   0.00742       15.3     https://www.dictionary.com/browse/opportunity
+FOR TFIDF AND PAGERANK
+KendalltauResult(correlation=0.3578132236660672, pvalue=0.18457255283988294)
+FOR TFIDF AND alexa
+KendalltauResult(correlation=0.09417632186960223, pvalue=0.714342227424899)
+FOR alexa AND PAGERANK
+KendalltauResult(correlation=0.22810637940488043, pvalue=0.40790488230961974)
+FOR RANDOM
+KendalltauResult(correlation=0.3595732599803958, pvalue=0.15076277502664528)
+
