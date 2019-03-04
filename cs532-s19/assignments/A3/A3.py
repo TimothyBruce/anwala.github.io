@@ -3,7 +3,7 @@
 import urllib.request as ul
 import urllib.error as ule
 import sys
-from bs4 import BeautifulSoup
+from boilerpipe.extract import Extractor
 import json
 import math
 import scipy.stats as stats
@@ -40,8 +40,9 @@ def saveHtml():
 
     for key in html_dump.keys():                        # For everything in html dump
         raw_html = html_dump[key]                       # The raw html.
-        soup = BeautifulSoup(raw_html, 'html.parser')   # Create html parser.
-        text = soup.get_text()                          # The parsed html.
+
+        ex = Extractor(extractor='ArticleExtractor', html=raw_html)
+        text = ex.getText()                      # The parsed html.
 
         linkdict = dict()                               # This is where the clean formatted data goes.
         linkdict['raw_html'] = str(raw_html)            # Put in the raw html.
@@ -117,7 +118,7 @@ def round_sig(x, sig=2):
 def kendallTauCalculation(a1, a2):
     return stats.kendalltau(a1, a2)
 
-saveHtml()
+#saveHtml()
 tf_idf('opportunity', idf(3170000000))                  # Calculate tf-idf and output it.
 
 
