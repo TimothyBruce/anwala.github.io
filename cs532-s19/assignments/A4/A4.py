@@ -62,6 +62,34 @@ def friend_data_generator(data, name):
     print("The median of friends" + name +"\'s friends has is: " + str(s.median(data)))
     histogramGenerator(data, name)
 
+"""
+def histogramGenerator(input_data, name):  # Get the mementos and create a histogram.
+    y=[]
+    friendNames = []
+    for i in range(len(input_data)):
+        y.append(i)
+        if (input_data[i] == len(input_data)-1):
+            friendNames.append(name)
+        else:
+            friendNames.append("f"+str(i))
+    hist = plt.figure(num=None, figsize=(16, 6))  # Create a Bar plot.
+                            #(BELOW) Create the bar chart.
+    #barPlot = plt.bar(y, input_data, align='edge')
+    barPlot = plt.plot(y, input_data)
+
+    plt.xlabel('Friends')  #Label things.
+    plt.ylabel('Individual\'s number of friends. (LOG Scale)')
+    plt.yscale("log")
+    plt.title(name + '\'s number of friends vs. Each friend\'s number of firends.')
+    plt.xticks(y, friendNames, ha='right', rotation=45, fontsize=7)
+
+    data_mean = s.mean(input_data)
+    plt.text(closestIndex(input_data, data_mean), data_mean, str(data_mean))
+
+    hist.savefig(name.rstrip(".")+".pdf", bbox_inches='tight')  # Save the histogram as a vector PDF.
+    pylab.show() 
+"""
+
 
 def histogramGenerator(input_data, name):  # Get the mementos and create a histogram.
     y=[]
@@ -74,7 +102,8 @@ def histogramGenerator(input_data, name):  # Get the mementos and create a histo
             friendNames.append("f"+str(i))
     hist = plt.figure(num=None, figsize=(16, 6))  # Create a Bar plot.
                             #(BELOW) Create the bar chart.
-    barPlot = plt.bar(y, input_data, align='edge')
+    #barPlot = plt.bar(y, input_data, align='edge')
+    barPlot = plt.plot(y, input_data)
 
     plt.xlabel('Friends')  #Label things.
     plt.ylabel('Individual\'s number of friends. (LOG Scale)')
@@ -82,8 +111,25 @@ def histogramGenerator(input_data, name):  # Get the mementos and create a histo
     plt.title(name + '\'s number of friends vs. Each friend\'s number of firends.')
     plt.xticks(y, friendNames, ha='right', rotation=45, fontsize=7)
 
+    data_mean = s.mean(input_data)
+    plt.annotate("Mean (below): " + str(round(data_mean, 2)), (0, data_mean+20))
+    plt.arrow(len(input_data)+ 10, data_mean, -(len(input_data)+20), 0)
+
+    data_median = s.median(input_data)
+    plt.annotate("Median (below): " + str(round(data_median, 2)), (0, data_median + 20))
+    plt.arrow(len(input_data) + 10, data_median, -(len(input_data) + 20), 0)
+
     hist.savefig(name.rstrip(".")+".pdf", bbox_inches='tight')  # Save the histogram as a vector PDF.
     pylab.show()                                  #Display histogram in window for me.
+
+
+def closestIndex(list, value):
+    closestValue = list[0]
+    for item in list:
+        if abs(value-item) < abs(value-closestValue):
+            closestValue = item
+    print(closestValue)
+    return list.index(closestValue)
 
 
 def GetHTML(url):
@@ -95,4 +141,6 @@ def GetHTML(url):
     return temp_html_reader.read()  # Returns the html code
 
 
-q2("acnwala")
+#q2("acnwala")
+#q2("TimTheBruce")
+q1()
