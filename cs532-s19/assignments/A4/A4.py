@@ -19,7 +19,7 @@ api = tweepy.API(auth)
 def q1():
     f = open('acnwala-friendscount.csv', 'r')                    # Get the links.
 
-    print(f.readline())
+    f.readline()
 
     data = []
 
