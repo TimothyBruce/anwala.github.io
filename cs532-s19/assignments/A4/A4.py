@@ -13,7 +13,7 @@ import time
 auth = OAuthHandler("NJm6rzzKKSEIyBZfSG2KhJIeu", "YV1mrqxSMS7TnKuzPg71oCNLhGDo2JdR0F4H5clzL42abHjy23")
 auth.set_access_token("88949861-GPwANfnvGAHlVkf9WN6Kp7yK3OIkMoQOHIJrR1DsN",
                       "4lDgep14e5hihu310yErW4176wD8LPhR4KTIf5seJA8Qx")
-api = tweepy.API(auth)
+api = tweepy.API(auth, wait_on_rate_limit=True)
 
 
 def q1():
@@ -42,13 +42,17 @@ def q2(name):       #https://stackoverflow.com/questions/17431807/get-all-follow
     data = []
     for user in followers:
         ff = []                             #FF stands for "followers followers" nifty.
-        for page in tweepy.Cursor(api.followers_ids, user_id=user).pages():
-            ff.extend(page)
-            if len(page) > 5000:
-                time.sleep(60)
-        data.append(len(ff))
-        print(data[-1])
-        time.sleep(60)
+
+        try:
+            for page in tweepy.Cursor(api.followers_ids, user_id=user).pages():
+                ff.extend(page)
+                if len(page) > 5000:
+                    time.sleep(60)
+            data.append(len(ff))
+            print(data[-1])
+            time.sleep(60)
+        except:
+            print("Value " + user + " was excluded!")
 
     data.append(len(data))
     data.sort()
@@ -141,6 +145,6 @@ def GetHTML(url):
     return temp_html_reader.read()  # Returns the html code
 
 
-#q2("acnwala")
+q2("acnwala")
 #q2("TimTheBruce")
-q1()
+#q1()
