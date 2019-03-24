@@ -52,7 +52,7 @@ def q2(name):       #https://stackoverflow.com/questions/17431807/get-all-follow
             print(data[-1])
             time.sleep(60)
         except:
-            print("Value " + user + " was excluded!")
+            print("Value " + str(user) + " was excluded!")
 
     data.append(len(data))
     data.sort()
