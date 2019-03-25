@@ -3,7 +3,6 @@ from igraph import *
 import re
 
 def main():
-    pngs = []
     g = Graph()
 
     data = get_data()
