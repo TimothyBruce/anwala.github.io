@@ -66,34 +66,6 @@ def friend_data_generator(data, name):
     print("The median of friends" + name +"\'s friends has is: " + str(s.median(data)))
     histogramGenerator(data, name)
 
-"""
-def histogramGenerator(input_data, name):  # Get the mementos and create a histogram.
-    y=[]
-    friendNames = []
-    for i in range(len(input_data)):
-        y.append(i)
-        if (input_data[i] == len(input_data)-1):
-            friendNames.append(name)
-        else:
-            friendNames.append("f"+str(i))
-    hist = plt.figure(num=None, figsize=(16, 6))  # Create a Bar plot.
-                            #(BELOW) Create the bar chart.
-    #barPlot = plt.bar(y, input_data, align='edge')
-    barPlot = plt.plot(y, input_data)
-
-    plt.xlabel('Friends')  #Label things.
-    plt.ylabel('Individual\'s number of friends. (LOG Scale)')
-    plt.yscale("log")
-    plt.title(name + '\'s number of friends vs. Each friend\'s number of firends.')
-    plt.xticks(y, friendNames, ha='right', rotation=45, fontsize=7)
-
-    data_mean = s.mean(input_data)
-    plt.text(closestIndex(input_data, data_mean), data_mean, str(data_mean))
-
-    hist.savefig(name.rstrip(".")+".pdf", bbox_inches='tight')  # Save the histogram as a vector PDF.
-    pylab.show() 
-"""
-
 
 def histogramGenerator(input_data, name):  # Get the mementos and create a histogram.
     y=[]
