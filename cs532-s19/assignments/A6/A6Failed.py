@@ -14,6 +14,7 @@ class User:
     zip_code = None
     ageGenderOccupationValue = None
     inputString = ""
+    reviews = []
 
     def __init__(self, UID, Age, Gender, Occupation, Zip_Code, inputString):
         self.user_id = int(UID)
@@ -57,14 +58,33 @@ def main():
         for i in range(len(closestUser)):
             if abs(user.ageGenderOccupationValue - me.ageGenderOccupationValue) < cUVal[i] and user not in closestUser:
                 cUVal[i] = abs(user.ageGenderOccupationValue - me.ageGenderOccupationValue)
+                user.reviews = getReviewsByUser(user.user_id)
                 closestUser[i] = user
 
-    for user in closestUser:
-        print(user.inputString)
-        reviewData = getReviewsByUser(user.user_id)
 
-        for review in reviewData:
-            print(str(review[1]) + "    " + str(getMovieTitle(int(review[0]))))
+    for user in closestUser:
+        print(user.inputString.split("\n")[0])
+        user.reviews = sorted(user.reviews, key=lambda x: x[1])
+
+        topThree = []
+        bottomThree = []
+        for i in range(len(user.reviews)):
+            if i < 3:
+                bottomThree.append(user.reviews[i])
+            if len(user.reviews) - i < 4:
+                topThree.append(user.reviews[i])
+
+        print("User's top three movies:")
+        for movie in topThree:
+            print(getMovieTitle(movie[0]))
+
+        print
+
+        print("User's bottom three movies:")
+        for movie in bottomThree:
+            print(getMovieTitle(movie[0]))
+        print("\n"*2)
+
 
 def getMovieTitle(movieID):
     f = open("ml-100k/u.item")
