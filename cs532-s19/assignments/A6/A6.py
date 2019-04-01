@@ -80,6 +80,6 @@ def get_user(user_id):
             return line.split("\n")[0]
 
 
-#get_most_and_least_similar_users()
-#print("\n"*1)
+get_most_and_least_similar_users()
+print("\n"*1)
 main()
