@@ -26,15 +26,15 @@ def main():
     print("\nFive similar movies to my favorite movie " + favorite_movie + " are:")
     fav_mov_sim = similiar_item_data[favorite_movie][0:5]  # For real me, some recommended movies for my preferences.
     for mov in fav_mov_sim:
-        print(mov[1])
+        print(mov[1] + "    "+ str(mov[0]))
 
     print("\nFive similar movies to my least favorite movie " + least_favorite_movie + " are:")
     lea_fav_mov_sim = similiar_item_data[least_favorite_movie][0:5]
     for mov in lea_fav_mov_sim:
-        print(mov[1])
+        print(mov[1] + "    "+ str(mov[0]))
 
 
-def get_most_and_least_similiar_users():
+def get_most_and_least_similar_users():
     """
     Calculates users that are similar to the substitute user from problem one. Early on, I noticed that the program
     took a while to execute, so I multi-threaded the sim_distance function to expedite execution.
@@ -54,7 +54,6 @@ def get_most_and_least_similiar_users():
         print(u)
 
     print("\nThe least similar users are: ")
-
     for i in range(5):
         u = get_user(similarity_data[i][0]).split("\n")[0]
         print(u)
@@ -81,6 +80,6 @@ def get_user(user_id):
             return line.split("\n")[0]
 
 
-get_most_and_least_similiar_users()
-print("\n"*1)
+#get_most_and_least_similar_users()
+#print("\n"*1)
 main()

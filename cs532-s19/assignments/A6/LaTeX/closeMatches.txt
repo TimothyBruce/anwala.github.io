@@ -1,0 +1,37 @@
+575|33|M|marketing|46032
+User's top three movies:
+Schindler's List (1993)
+Rear Window (1954)
+Monty Python and the Holy Grail (1974)
+
+User's bottom three movies:
+Liar Liar (1997)
+Truth About Cats & Dogs, The (1996)
+Some Folks Call It a Sling Blade (1993)
+
+
+
+4|24|M|technician|43537
+User's top three movies:
+Blues Brothers 2000 (1998)
+Wonderland (1997)
+In & Out (1997)
+
+User's bottom three movies:
+Spawn (1997)
+Mimic (1997)
+Client, The (1994)
+
+
+
+69|24|M|engineer|55337
+User's top three movies:
+Graduate, The (1967)
+Scream (1996)
+Empire Strikes Back, The (1980)
+
+User's bottom three movies:
+Devil's Own, The (1997)
+Peacemaker, The (1997)
+Saint, The (1997)
+
