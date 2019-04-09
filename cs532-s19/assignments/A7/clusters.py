@@ -1,4 +1,6 @@
 import re
+from PIL import Image,ImageDraw
+
 def readfile(filename):
     file = open(filename)
     lines=[line for line in file.readlines()]
@@ -104,3 +106,38 @@ def printclust(clust, labels=None, n=0):
     if clust.right!=None:
         printclust(clust.right,labels=labels,n=n+1)
 
+def getheight(clust):
+    # Is this an endpoint? Then the height is just 1
+    if clust.left==None and clust.right==None:
+        return 1
+
+    # Otherwise the height is the same of the heights of
+    # each branch
+    return getheight(clust.left)+getheight(clust.right)
+
+def getdepth(clust):
+    # The distance of an endpoint is 0.0
+    if clust.left==None and clust.right==None:
+        return 0
+    # The distance of a branch is the greater of its two sides
+    # plus its own distance
+    return max(getdepth(clust.left),getdepth(clust.right))+clust.distance
+
+def drawdendrogram(clust,labels,jpeg='clusters.jpg'):
+  # height and width
+  h=getheight(clust)*20
+  w=1200
+  depth=getdepth(clust)
+
+  # width is fixed, so scale distances accordingly
+  scaling=float(w-150)/depth
+
+  # Create a new image with a white background
+  img=Image.new('RGB',(w,h),(255,255,255))
+  draw=ImageDraw.Draw(img)
+
+  draw.line((0,h/2,10,h/2),fill=(255,0,0))
+
+  # Draw the first node
+  drawnode(draw,clust,10,(h/2),scaling,labels)
+  img.save(jpeg,'JPEG')

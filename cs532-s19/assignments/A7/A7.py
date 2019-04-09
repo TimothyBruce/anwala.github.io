@@ -214,4 +214,4 @@ for i in range(len(data[1:])):
         print(blognames[i])
         print(len(data[i]))
 clust = clusters.hcluster(data)
-clusters.printclust(clust,labels=blognames)
+clusters.printclust(clust, labels=blognames)
