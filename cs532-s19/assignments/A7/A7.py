@@ -1,9 +1,9 @@
-import urllib.parse
+import urllib
 import requests
 import feedparser
 from bs4 import BeautifulSoup as bs4
 import time
-from html.parser import HTMLParser
+from HTMLParser import HTMLParser
 import random as r
 import clusters
 
@@ -89,7 +89,7 @@ def getWords(url):
 
 
 def noPunctuation(punctualString):  # https://www.programiz.com/python-programming/examples/remove-punctuation
-    punct = '''!()-[]{};:'"\,<>./?@#$%^&*_~–1234567890'''
+    punct = '''!()-[]{};:'"\,<>./?@#$%^&*_~1234567890'''
     notPunctualString = ""
     for char in punctualString:
         if char not in punct:
@@ -215,3 +215,13 @@ for i in range(len(data[1:])):
         print(len(data[i]))
 clust = clusters.hcluster(data)
 clusters.printclust(clust, labels=blognames)
+clusters.drawdendrogram(clust, blognames, jpeg='blogclust.jpg')
+
+kclust=clusters.kcluster(data, k=5)
+print(kclust)
+kclust=clusters.kcluster(data, k=10)
+print(kclust)
+kclust=clusters.kcluster(data, k=20)
+print(kclust)
+coords=clusters.scaledown(data)
+clusters.draw2d(coords,blognames,jpeg='blogs2d.jpg')
