@@ -1,0 +1,203 @@
+ASCII Dendrogram:
+-
+ -
+  -
+   -
+    Index to The Recipe file
+    -
+     -
+      Julia's coding blog - Practice makes perfect
+      -
+       Ubuntu Tips And Tricks
+       -
+        Another Casual Coder
+        -
+         -
+          Bharatkalyan97
+          Een Italiaanse vrouw dating can be tricky
+         -
+          Wild Plants Post
+          -
+           English Words ending in aa, ah...zy
+           Admissions Essay Examples
+     -
+      -
+       Pierre de Larminat
+       Villa Speranza
+      -
+       -
+        Old Metal Commander
+        ::: Back Tracking :::
+       -
+        Misanthropic Dawn
+        -
+         Inexplicata-The Journal of Hispanic Ufology
+         Revoking Ray Smiths "Black Man's Gift To Portugal" (Contra)
+   -
+    Richard Chan Solicitor
+    -
+     SolForEve
+     -
+      Healthy Education
+      -
+       Shoulder Arthritis / Rotator Cuff Tears: causes of shoulder pain
+       -
+        Ghana Consumer Watch
+        -
+         -
+          Bennett Carroll Solicitors Blog
+          -
+           Rebecca Tushnet's 43(B)log
+           Cultural Heritage Lawyer Rick St. Hilaire
+         -
+          -
+           Free custom college essay paper samples
+           Good Research Papers
+          -
+           Arctic Northwest Passage
+           In From the Cold
+  -
+   Comments on Radical Honey: Bewitched by the Blackthorn Being, part II ~ sacrifice & service
+   -
+    -
+     Word Lister
+     -
+      Visual Vocabulary
+      -
+       The Lexicon of Cultural Folly
+       -
+        vernacular
+        -
+         Words Worth
+         Words Going Wild
+    -
+     Grahams Random Ramblings
+     -
+      -
+       Mandela Effect Proof
+       Kenay Kash Blog
+      -
+       A Capital Idea
+       -
+        -
+         Quiltville's Quips & Snips!!
+         -
+          Anonymous Lawyer
+          -
+           -
+            Mystifying Macedonia
+            -
+             cocktail virgin slut
+             -
+              -
+               A word a day
+               -
+                Comments on Sultan Knish: The Authenticity of Fake
+                -
+                 Althouse
+                 -
+                  -
+                   Musings on the Muse
+                   -
+                    Pesach Sheini
+                    Embracing Hope
+                  -
+                   -
+                    Backtracking
+                    BackTrack
+                   -
+                    Onofframp
+                    -
+                     film babble blog
+                     Henry's Western Round-up
+              -
+               -
+                Realm of a Green Witch
+                -
+                 Sophie's Floorboard
+                 -
+                  Kitchen Witch Blog
+                  -
+                   Let's Backtrack
+                   -
+                    asphyxia
+                    Aile Reve's Blog
+               -
+                The Fantastic Flying Book Club
+                Blaugustine's Other Blog
+           -
+            Bootpacks and Skintracks
+            -
+             The Eight Seaters Story | Toyota Alphard
+             3D MODELING
+        -
+         Blackthorn
+         -
+          -
+           The Cycling Solicitor
+           -
+            Words, words, words (and phrases)
+            Law and Lawyers
+          -
+           Sunrise Cabs
+           Rent a Carry Daba 7 Seater on Cheap Rates At Lahore
+ -
+  Comments on Ms. Yingling Reads: The Assassin's Curse (Blackthorn Key #3)
+  Tanfield Railway Blog
+
+OUTPUT FOR QUESTION 3: Printed values for the k-means centroids.
+Iteration 0
+Iteration 1
+Iteration 2
+Iteration 3
+Iteration 4
+Iteration 5
+[[1, 3, 4, 7, 9, 10, 11, 12, 13, 14, 15, 16, 18, 19, 20, 25, 26, 27, 28, 30, 31, 32, 34, 35, 36, 38, 39, 40, 41, 44, 45, 47, 49, 50, 54, 56, 58, 64, 67, 68, 69, 70, 71, 72], [2, 63], [0, 5, 6, 17, 21, 23, 24, 42, 52, 59, 60], [22, 29, 33, 48, 55, 57, 61, 65], [8, 37, 43, 46, 51, 53, 62, 66]]
+['asphyxia', 'Pesach Sheini', 'Blackthorn', 'Realm of a Green Witch', 'Kitchen Witch Blog', "Comments on Ms. Yingling Reads: The Assassin's Curse (Blackthorn Key #3)", 'The Fantastic Flying Book Club', 'film babble blog', "Henry's Western Round-up", 'cocktail virgin slut', 'Backtracking', "Sophie's Floorboard", 'BackTrack', "Let's Backtrack", "Quiltville's Quips & Snips!!", 'Arctic Northwest Passage', "Blaugustine's Other Blog", 'Tanfield Railway Blog', 'Inexplicata-The Journal of Hispanic Ufology', 'The Eight Seaters Story | Toyota Alphard', 'Sunrise Cabs', 'Embracing Hope', 'Rent a Carry Daba 7 Seater on Cheap Rates At Lahore', 'In From the Cold', 'Mandela Effect Proof', 'Words Worth', 'vernacular', 'Words, words, words (and phrases)', 'A word a day', 'Althouse', 'Grahams Random Ramblings', "Rebecca Tushnet's 43(B)log", 'Musings on the Muse', 'Words Going Wild', 'Bootpacks and Skintracks', 'Onofframp', 'Mystifying Macedonia', 'Comments on Sultan Knish: The Authenticity of Fake', 'Law and Lawyers', 'Anonymous Lawyer', 'The Cycling Solicitor', 'Bennett Carroll Solicitors Blog', 'Richard Chan Solicitor', 'Cultural Heritage Lawyer Rick St. Hilaire']
+['Pierre de Larminat', 'Villa Speranza']
+['Index to The Recipe file', 'Comments on Radical Honey: Bewitched by the Blackthorn Being, part II ~ sacrifice & service', 'Misanthropic Dawn', '::: Back Tracking :::', 'Another Casual Coder', "Julia's coding blog - Practice makes perfect", 'Ubuntu Tips And Tricks', 'Kenay Kash Blog', 'Bharatkalyan97', "Aile Reve's Blog", 'Een Italiaanse vrouw dating can be tricky']
+['SolForEve', 'Shoulder Arthritis / Rotator Cuff Tears: causes of shoulder pain', '3D MODELING', 'Healthy Education', 'Revoking Ray Smiths "Black Man\'s Gift To Portugal" (Contra)', 'Ghana Consumer Watch', 'Free custom college essay paper samples', 'Good Research Papers']
+['Old Metal Commander', 'Visual Vocabulary', 'Wild Plants Post', 'The Lexicon of Cultural Folly', 'A Capital Idea', 'English Words ending in aa, ah...zy', 'Admissions Essay Examples', 'Word Lister']
+Iteration 0
+Iteration 1
+Iteration 2
+Iteration 3
+Iteration 4
+[[17], [2, 8, 28], [1, 3, 5, 7, 9, 11, 16, 19, 20, 26, 32, 48, 49, 51, 58, 59, 64, 68], [63], [6, 22], [29, 47, 57, 70, 71, 72], [12, 13, 14, 15, 18, 24, 25, 27, 30, 33, 35, 36, 37, 38, 39, 40, 41, 44, 45, 46, 50, 54, 55, 56, 66, 67, 69], [4, 10], [21, 23, 42, 43, 52, 53, 60, 61, 62, 65], [0, 31, 34]]
+['::: Back Tracking :::']
+['Pierre de Larminat', 'Old Metal Commander', 'Inexplicata-The Journal of Hispanic Ufology']
+['asphyxia', 'Pesach Sheini', 'Comments on Radical Honey: Bewitched by the Blackthorn Being, part II ~ sacrifice & service', 'Realm of a Green Witch', 'Kitchen Witch Blog', 'The Fantastic Flying Book Club', "Sophie's Floorboard", "Let's Backtrack", "Quiltville's Quips & Snips!!", "Blaugustine's Other Blog", 'Embracing Hope', 'Healthy Education', 'Musings on the Muse', 'A Capital Idea', 'Mystifying Macedonia', "Aile Reve's Blog", 'Comments on Sultan Knish: The Authenticity of Fake', 'Anonymous Lawyer']
+['Villa Speranza']
+['Misanthropic Dawn', 'SolForEve']
+['Shoulder Arthritis / Rotator Cuff Tears: causes of shoulder pain', "Rebecca Tushnet's 43(B)log", 'Ghana Consumer Watch', 'Bennett Carroll Solicitors Blog', 'Richard Chan Solicitor', 'Cultural Heritage Lawyer Rick St. Hilaire']
+['film babble blog', "Henry's Western Round-up", 'cocktail virgin slut', 'Backtracking', 'BackTrack', 'Ubuntu Tips And Tricks', 'Arctic Northwest Passage', 'Tanfield Railway Blog', 'The Eight Seaters Story | Toyota Alphard', '3D MODELING', 'In From the Cold', 'Mandela Effect Proof', 'Visual Vocabulary', 'Words Worth', 'vernacular', 'Words, words, words (and phrases)', 'A word a day', 'Althouse', 'Grahams Random Ramblings', 'The Lexicon of Cultural Folly', 'Words Going Wild', 'Bootpacks and Skintracks', 'Revoking Ray Smiths "Black Man\'s Gift To Portugal" (Contra)', 'Onofframp', 'Word Lister', 'Law and Lawyers', 'The Cycling Solicitor']
+['Blackthorn', "Comments on Ms. Yingling Reads: The Assassin's Curse (Blackthorn Key #3)"]
+['Another Casual Coder', "Julia's coding blog - Practice makes perfect", 'Kenay Kash Blog', 'Wild Plants Post', 'Bharatkalyan97', 'English Words ending in aa, ah...zy', 'Een Italiaanse vrouw dating can be tricky', 'Free custom college essay paper samples', 'Admissions Essay Examples', 'Good Research Papers']
+['Index to The Recipe file', 'Sunrise Cabs', 'Rent a Carry Daba 7 Seater on Cheap Rates At Lahore']
+Iteration 0
+Iteration 1
+Iteration 2
+Iteration 3
+Iteration 4
+[[29], [37, 46, 66], [63], [28], [4, 10, 11, 12, 13, 15, 18, 26, 32, 35, 36, 38, 39, 40, 41, 47, 49, 50, 56, 64, 67, 68, 72], [6], [], [0, 52, 60], [1, 5, 7, 9, 16, 19, 54, 58, 59], [30, 65, 69], [21, 42, 43, 51, 53, 62], [3, 22, 33, 57, 61], [], [14, 44, 48, 70, 71], [2, 8, 17], [27, 55], [20, 45], [23, 24, 25], [31, 34], []]
+['Shoulder Arthritis / Rotator Cuff Tears: causes of shoulder pain']
+['Visual Vocabulary', 'The Lexicon of Cultural Folly', 'Word Lister']
+['Villa Speranza']
+['Inexplicata-The Journal of Hispanic Ufology']
+['Blackthorn', "Comments on Ms. Yingling Reads: The Assassin's Curse (Blackthorn Key #3)", 'The Fantastic Flying Book Club', 'film babble blog', "Henry's Western Round-up", 'Backtracking', 'BackTrack', "Blaugustine's Other Blog", 'Embracing Hope', 'In From the Cold', 'Mandela Effect Proof', 'Words Worth', 'vernacular', 'Words, words, words (and phrases)', 'A word a day', "Rebecca Tushnet's 43(B)log", 'Musings on the Muse', 'Words Going Wild', 'Onofframp', 'Comments on Sultan Knish: The Authenticity of Fake', 'Law and Lawyers', 'Anonymous Lawyer', 'Cultural Heritage Lawyer Rick St. Hilaire']
+['Misanthropic Dawn']
+[]
+['Index to The Recipe file', 'Bharatkalyan97', 'Een Italiaanse vrouw dating can be tricky']
+['asphyxia', 'Comments on Radical Honey: Bewitched by the Blackthorn Being, part II ~ sacrifice & service', 'Realm of a Green Witch', 'Kitchen Witch Blog', "Sophie's Floorboard", "Let's Backtrack", 'Bootpacks and Skintracks', 'Mystifying Macedonia', "Aile Reve's Blog"]
+['The Eight Seaters Story | Toyota Alphard', 'Good Research Papers', 'The Cycling Solicitor']
+['Another Casual Coder', 'Kenay Kash Blog', 'Wild Plants Post', 'A Capital Idea', 'English Words ending in aa, ah...zy', 'Admissions Essay Examples']
+['Pesach Sheini', 'SolForEve', '3D MODELING', 'Ghana Consumer Watch', 'Free custom college essay paper samples']
+[]
+['cocktail virgin slut', 'Althouse', 'Healthy Education', 'Bennett Carroll Solicitors Blog', 'Richard Chan Solicitor']
+['Pierre de Larminat', 'Old Metal Commander', '::: Back Tracking :::']
+['Tanfield Railway Blog', 'Revoking Ray Smiths "Black Man\'s Gift To Portugal" (Contra)']
+["Quiltville's Quips & Snips!!", 'Grahams Random Ramblings']
+["Julia's coding blog - Practice makes perfect", 'Ubuntu Tips And Tricks', 'Arctic Northwest Passage']
+['Sunrise Cabs', 'Rent a Carry Daba 7 Seater on Cheap Rates At Lahore']
+[]
+
