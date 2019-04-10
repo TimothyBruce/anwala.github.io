@@ -1,3 +1,7 @@
+"""
+A lot of these functions are from 'Programming Collective Intelligence' by Toby Segaran, but have been translated to
+Python 3 for use with this program.
+"""
 import re
 from PIL import Image,ImageDraw
 import random
@@ -211,6 +215,7 @@ def kcluster(rows,distance=pearson,k=4):
 
 
 def scaledown(data,distance=pearson,rate=0.01):
+  counter = 0
   n=len(data)
 
   # The real distances between every pair of items
@@ -248,6 +253,7 @@ def scaledown(data,distance=pearson,rate=0.01):
 
         # Keep track of the total error
         totalerror+=abs(errorterm)
+    counter += 1
     print totalerror
 
     # If the answer got worse by moving the points, we are done
@@ -258,7 +264,7 @@ def scaledown(data,distance=pearson,rate=0.01):
     for k in range(n):
       loc[k][0]-=rate*grad[k][0]
       loc[k][1]-=rate*grad[k][1]
-
+  print("Counter: " + str(counter))
   return loc
 
 def draw2d(data,labels,jpeg='mds2d.jpg'):

@@ -97,7 +97,12 @@ def noPunctuation(punctualString):  # https://www.programiz.com/python-programmi
     return notPunctualString
 
 
-def findfeed(site):     #https://gist.github.com/alexmill/9bc634240531d81c3abe
+def findfeed(site):
+    """
+    From user alexmill on github, this is a truly spectacular bit of code. Be cautious of 404 errors, because they
+    cause the program to spin its wheels. Other than that it tends to find the rss feed every time one is present.
+    https://gist.github.com/alexmill/9bc634240531d81c3abe
+    """
     print(site)
     raw = requests.get(site).text
     result = []
@@ -139,7 +144,7 @@ def getBlogs():
         print("No module named 'google' found")
 
     finalResults = []
-    for query in t():
+    for query in getNewWords():
         print(query)
         queryResults = []
         query = query + " .blogspot.com"
@@ -156,7 +161,7 @@ def getBlogs():
     print(finalResults)
 
 
-def t():
+def getNewWords():
     words = randomWords(10)
     return words
 
@@ -200,6 +205,12 @@ class MyHTMLParser(HTMLParser):
         if self.flag == True:
             print("Encountered some data  :", data)
 
+def printkclustValues(kclust):
+    print(kclust)
+    for value in kclust:
+        names = [blognames[blogIndex] for blogIndex in value]
+        print(names)
+
 #getBlogs()
 #main()
 
@@ -218,10 +229,10 @@ clusters.printclust(clust, labels=blognames)
 clusters.drawdendrogram(clust, blognames, jpeg='blogclust.jpg')
 
 kclust=clusters.kcluster(data, k=5)
-print(kclust)
+printkclustValues(kclust)
 kclust=clusters.kcluster(data, k=10)
-print(kclust)
+printkclustValues(kclust)
 kclust=clusters.kcluster(data, k=20)
-print(kclust)
+printkclustValues(kclust)
 coords=clusters.scaledown(data)
 clusters.draw2d(coords,blognames,jpeg='blogs2d.jpg')
