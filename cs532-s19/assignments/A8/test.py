@@ -1,6 +1,7 @@
 import docclass
 from subprocess import check_output
 import os
+import math
 
 cl = docclass.naivebayes(docclass.getwords)
 
@@ -19,9 +20,16 @@ def main():
 
 
 def train_directories(directories, order_of_correctness):
+    emails = []
+    key = []
     for i in range(len(directories)):
-        emails = get_emails(directories[i])
-        train_set(emails, order_of_correctness[i])
+        counter = 0
+        for email in get_emails(directories[i]):
+            emails.append(email)
+            counter += 1
+        for r in range(counter):
+            key.append(order_of_correctness[i])
+    train_set(emails, key)
 
 
 def check_directories(directories, order_of_correctness):
@@ -44,8 +52,13 @@ def get_emails(directory):
 
 
 def train_set(training_data, value):
-    for email in training_data:
-        cl.train(email, value)
+    print(value)
+    length = math.floor(len(training_data)/2)
+    for i in range(length):
+        cl.train(training_data[i*2], value[i*2])
+        cl.train(training_data[(length*2)-(i*2)-1], value[(length*2)-(i*2)-1])
+        print(str(i*2) + "  " + value[i*2])
+        print(str((length*2)-(i * 2) - 1) + "   " + value[(length*2)-(i*2)-1])
 
 
 def check_set(training_data, value):
