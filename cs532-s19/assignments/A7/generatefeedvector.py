@@ -30,7 +30,6 @@ def getwords(html):
   # Convert to lowercase
   return [word.lower(  ) for word in words if word!='']
 
-
 apcount={}
 wordcounts={}
 feedlist=[]
@@ -39,13 +38,13 @@ for feedurl in file.readlines():
     feedlist.append(feedurl.split("\n")[0])
     title, wc = getwordcounts(feedurl)
     wordcounts[title] = wc
-    for word, count in wc.items(  ):
+    for word, count in wc.items():
         apcount.setdefault(word, 0)
         if count > 1:
             apcount[word] += 1
 
 wordlist=[]
-for w, bc in apcount.items(  ):
+for w, bc in apcount.items():
     frac=float(bc)/len(feedlist)
     if frac>0.1 and frac<0.5: wordlist.append(w)
 
@@ -66,11 +65,11 @@ for blog, wc in wordcounts.items():
     for word in wordlist:
         if word in wc:
             blogString += "\t" + str(wc[word])
-            #out.write('\t%d' % wc[word])
+            # out.write('\t%d' % wc[word])
         else:
             blogString += "\t" + "0"
-            #out.write('\t0')
+            # out.write('\t0')
     blogString += "\n"
-    #out.write('\n')
+    # out.write('\n')
     out.write(blogString)
 out.close()

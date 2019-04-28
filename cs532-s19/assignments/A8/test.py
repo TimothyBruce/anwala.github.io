@@ -14,9 +14,9 @@ def main():
 
     cl.setdb('tabruce.db')
 
-    train_directories([os.curdir + "/Training/spam/", os.curdir + "/Training/notSpam/"], ["spam", "not spam"])
+    train_directories([os.curdir + "/Testing/spam/", os.curdir + "/Testing/notSpam/"], ["spam", "not spam"])
 
-    check_directories([os.curdir + "/Testing/notSpam/", os.curdir + "/Testing/spam/"], ["not spam", "spam"])
+    check_directories([os.curdir + "/Training/notSpam/", os.curdir + "/Training/spam/"], ["not spam", "spam"])
 
 
 def train_directories(directories, order_of_correctness):
