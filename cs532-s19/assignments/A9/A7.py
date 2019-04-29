@@ -19,6 +19,7 @@ def links(url):
 # word counts for an RSS feed
 
 def popularTerms(data, wordorder):
+    # Gets the most popular 1000 words from the dataset (or all of the words).
     words = {}
 
     for wordKey in range(len(wordorder)):
@@ -37,6 +38,7 @@ def popularTerms(data, wordorder):
 
 
 def blog_term_matrix(popTerms, data, words, blogNames):
+    # Creates the blog-term matrix for all of the blogs.
     website_matricies = []
     for site in blogNames:
         website_matricies.append([site, get_blog_term_matrix(popterms, data[blogNames.index(site)], words)])
@@ -45,8 +47,9 @@ def blog_term_matrix(popTerms, data, words, blogNames):
 
 
 def get_blog_term_matrix(popTerms, site_data, words):
+    # Creates the blog term matrix for a single website.
     matrix = []
-    for item in popterms:
+    for item in popTerms:
         word_index = words.index(item[0])
         matrix.append(site_data[word_index])
 
@@ -105,4 +108,4 @@ for blog in btm:
     if blog[0] == "F-Measure" or blog[0] == "ws-dl":
         print(blog[0])
         print(btm.index(blog))
-        print(knnestimate(btm, btm[btm.index(blog)][1]))
+        print(knnestimate(btm, btm[btm.index(blog)][1], 20))
