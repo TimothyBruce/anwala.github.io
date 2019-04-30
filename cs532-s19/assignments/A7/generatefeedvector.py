@@ -33,7 +33,7 @@ def getwords(html):
 apcount={}
 wordcounts={}
 feedlist=[]
-file = open('feedlist.txt')
+file = open('similiarfeedlist.txt')
 for feedurl in file.readlines():
     feedlist.append(feedurl.split("\n")[0])
     title, wc = getwordcounts(feedurl)
@@ -51,7 +51,7 @@ for w, bc in apcount.items():
 if len(wordlist) > 1000:
     wordlist = wordlist[0:1000]
 
-out=open('blogdata.txt','w')
+out=open('similarblogdata.txt','w')
 out.write('Blog')
 for word in wordlist:
     out.write('\t%s' % word)

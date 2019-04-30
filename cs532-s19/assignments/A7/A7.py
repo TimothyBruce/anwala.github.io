@@ -41,7 +41,7 @@ def main():
             """
             rsss.append(rss[0])
 
-    file = open('feedlist.txt', 'w')
+    file = open('similiarfeedlist.txt', 'w')
     for rss in rsss:
         file.write(rss + "\n")
     file.close()
@@ -67,7 +67,7 @@ def popularTerms(listOfWordsBySite):
 
 def getURLS():
     output = []
-    f = open("blogs.txt", "r")
+    f = open("similiarblogs.txt", "r")
     for url in f.readlines():
         output.append(url.split("\n")[0])
     return output
@@ -117,8 +117,11 @@ def findfeed(site):
                 href = f.get("href", None)
                 if href:
                     possible_feeds.append(href)
-    parsed_url = urllib.parse.urlparse(site)
-    base = "https" + "://" + parsed_url.hostname
+    print(site.split("/")[2])
+    # parsed_url = urllib.parse.urlparse(site)
+    # base = "https" + "://" + parsed_url.hostname
+    parsed_url = site.split("/")[2]
+    base = "https" + "://" + parsed_url
     atags = html.findAll("a")
     for a in atags:
         href = a.get("href", None)
@@ -252,7 +255,7 @@ def euclidean(v1,v2): #NEED TO REIMPLEMENT.
 #getBlogs()
 #main()
 
-blognames,words,data=clusters.readfile('blogdata.txt')
+blognames,words,data=clusters.readfile('similarblogdata.txt')
 print(blognames)
 print(words)
 print(data)
@@ -264,7 +267,7 @@ for i in range(len(data[1:])):
         print(len(data[i]))
 clust = clusters.hcluster(data)
 clusters.printclust(clust, labels=blognames)
-clusters.drawdendrogram(clust, blognames, jpeg='blogclust.jpg')
+clusters.drawdendrogram(clust, blognames, jpeg='sblogclust.jpg')
 
 kclust=clusters.kcluster(data, k=5)
 printkclustValues(kclust)
@@ -273,4 +276,4 @@ printkclustValues(kclust)
 kclust=clusters.kcluster(data, k=20)
 printkclustValues(kclust)
 coords=clusters.scaledown(data)
-clusters.draw2d(coords, blognames, jpeg='blogs2d.jpg')
+clusters.draw2d(coords, blognames, jpeg='sblogs2d.jpg')
