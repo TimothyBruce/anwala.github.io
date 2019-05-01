@@ -196,3 +196,63 @@
         Computer Science using C++
         Ritu Computer Science
 
+
+
+
+
+K-MEANS RESULTS
+
+
+
+
+Iteration 0
+Iteration 1
+Iteration 2
+Iteration 3
+[[53], [14, 30, 39, 54, 84, 85], [0, 1, 2, 7, 9, 11, 13, 16, 18, 20, 26, 28, 33, 35, 40, 45, 46, 48, 50, 51, 56, 57, 58, 59, 61, 64, 65, 67, 69, 70, 71, 73, 76, 77, 78, 79, 83, 87, 88, 90, 94, 95], [10, 12, 17, 24, 25, 29, 38, 41, 42, 43, 44, 55, 60, 75, 92, 93, 97], [3, 4, 5, 6, 8, 15, 19, 21, 22, 23, 27, 31, 32, 34, 36, 37, 47, 49, 52, 62, 63, 66, 68, 72, 74, 80, 81, 82, 86, 89, 91, 96, 98]]
+['COMPUTER SCIENCE']
+['Web Science and Digital Libraries Research Group', 'Talking Heads Concert History', 'Mathematics and computer science', 'Computer Science - Amazing Resources', 'IProgramX', 'ALC Computer Science']
+['Maywood Middle School Band', 'Music and More', 'Only Solitaire blog', 'Yehudas Jewish Music Blog', 'Exploring Computer Science', 'Early Cajun Music', 'MusicRepublic - World Traditional Music from LPs and Cassettes', 'Haliburton Concert Series', 'DVD Concert TH Power By Deer 5001', 'Newell Concert Association', 'Gapplegate Music Review', 'Deer5001RockCocert', "Xisuma's Musical Journey", 'Music for Maniacs', 'Deep Cutz - [[Uncutz]]', "Music You (Possibly) Won't Hear Anyplace Else", 'The Music Salon', "Mrs. King's Music Class", 'Springdale Park Music', 'Music is the key', 'Heavy Soundboard Bootlegs', 'Drexciya Research Lab', 'WLUR 91.5 FM Music Review', 'Not Another Music Blog.', 'no longer forgotten music', 'Live Bootlegs', "Sophie's Floorboard", 'the concert', 'Gapplegate Classical-Modern Music Review', 'All Music - All Blogs', "The Devil's Music", 'Soundaboard', "The King's Music Blog", 'Solidboy Music Blog', 'Music Theory', 'Old Melodies ...', "Emily's Kodaly Music", 'F-Measure', ' We  Music @ HSES! ', 'Long Live Led Zeppelin', 'Music 000001', 'The Vintage Music Blog']
+['Forest-Rangeland Soil Ecology Lab', 'Hard Force', 'Notes for Nourishment', 'The Ripple Effect', 'Cliff Mass Weather and Climate Blog', 'CONCERT OVERLOAD', 'Glendale Noon Concerts', 'Notes From Kenya: MSU Hyena Research', 'Anttis music blog', "Scott's Music Reviews", 'Edendale Up Close Concerts', 'Parkside Music', 'Wading Through Research', 'Climate change research in partnership with Thoreau', 'UMD PSYC E-News', 'Things that change the way I think', 'Cobb Lab Research Blog']
+['Restless Legs Syndrome Foundation Blog', 'Sarnecka Lab Blog', 'Data Science Struggle', 'Eco-Evo Evo-Eco', 'Computer Science using C++', 'Computer Science', 'AKHSS Computer Science Group (AKUEB)', 'GSS College             Computer Science Department', 'The Female Perspective of Computer Science', 'Department of Computer Science', "Jessica Kirkpatrick's Blog", 'Young ISDR', "Pedro's Computer Science Blog", 'CityFaberLab City Faber Lab', 'Computer Science Solved MCQs', 'Yes, Another Science Blog', 'CS Undergrad Blog', 'The Tree of Life', 'Open Flask', 'Thomas Nield', 'DEPARTMENT OF COMPUTER SCIENCE AND APPLICATIONS', "Nick Brown's blog", 'Ritu Computer Science', 'The Aspirational Data Scientist', 'Project Zero', 'Current Research into Cures for Type-1 Diabetes', 'Public Understanding of Science Blog', 'Probably Approximately a Scientific Blog', 'RajLab', 'Science Released STAAR Questions', "UND HUMAN SPACEFLIGHT LABORATORY' BLOG", 'Pratt Lab Adventures', 'The New PI Sets Up a Lab']
+Iteration 0
+Iteration 1
+Iteration 2
+Iteration 3
+Iteration 4
+Iteration 5
+[[7, 12, 58, 59, 61, 65, 70, 71, 89, 95], [13, 53], [85], [0, 1, 2, 11, 16, 17, 18, 20, 26, 28, 29, 33, 35, 38, 40, 42, 45, 46, 50, 51, 55, 56, 57, 64, 67, 69, 73, 76, 77, 79, 87, 90], [30, 84], [3, 6, 9, 22, 27, 31, 37, 47, 48, 49, 52, 60, 80, 83, 86, 88, 91, 92, 94, 96, 98], [10, 24, 25, 41, 43, 44, 75, 93, 97], [4, 5, 14, 15, 32, 36, 62, 63, 66, 72, 74, 78, 82], [39, 54], [8, 19, 21, 23, 34, 68, 81]]
+['Yehudas Jewish Music Blog', 'Hard Force', 'WLUR 91.5 FM Music Review', 'Not Another Music Blog.', 'no longer forgotten music', "Sophie's Floorboard", 'All Music - All Blogs', "The Devil's Music", 'Science Released STAAR Questions', 'The Vintage Music Blog']
+['MusicRepublic - World Traditional Music from LPs and Cassettes', 'COMPUTER SCIENCE']
+['ALC Computer Science']
+['Maywood Middle School Band', 'Music and More', 'Only Solitaire blog', 'Early Cajun Music', 'Haliburton Concert Series', 'Notes for Nourishment', 'DVD Concert TH Power By Deer 5001', 'Newell Concert Association', 'Gapplegate Music Review', 'Deer5001RockCocert', 'CONCERT OVERLOAD', "Xisuma's Musical Journey", 'Music for Maniacs', 'Glendale Noon Concerts', 'Deep Cutz - [[Uncutz]]', 'Anttis music blog', "Music You (Possibly) Won't Hear Anyplace Else", 'The Music Salon', 'Springdale Park Music', 'Music is the key', 'Parkside Music', 'Heavy Soundboard Bootlegs', 'Drexciya Research Lab', 'Live Bootlegs', 'the concert', 'Gapplegate Classical-Modern Music Review', 'Soundaboard', "The King's Music Blog", 'Solidboy Music Blog', 'Old Melodies ...', 'F-Measure', 'Long Live Led Zeppelin']
+['Talking Heads Concert History', 'IProgramX']
+['Restless Legs Syndrome Foundation Blog', 'Eco-Evo Evo-Eco', 'Exploring Computer Science', 'The Female Perspective of Computer Science', "Jessica Kirkpatrick's Blog", 'Young ISDR', 'Yes, Another Science Blog', 'CS Undergrad Blog', "Mrs. King's Music Class", 'The Tree of Life', 'Open Flask', 'Wading Through Research', 'Current Research into Cures for Type-1 Diabetes', "Emily's Kodaly Music", 'RajLab', ' We  Music @ HSES! ', "UND HUMAN SPACEFLIGHT LABORATORY' BLOG", 'UMD PSYC E-News', 'Music 000001', 'Pratt Lab Adventures', 'The New PI Sets Up a Lab']
+['Forest-Rangeland Soil Ecology Lab', 'The Ripple Effect', 'Cliff Mass Weather and Climate Blog', 'Notes From Kenya: MSU Hyena Research', "Scott's Music Reviews", 'Edendale Up Close Concerts', 'Climate change research in partnership with Thoreau', 'Things that change the way I think', 'Cobb Lab Research Blog']
+['Sarnecka Lab Blog', 'Data Science Struggle', 'Web Science and Digital Libraries Research Group', 'Computer Science', "Pedro's Computer Science Blog", 'Computer Science Solved MCQs', 'Thomas Nield', 'DEPARTMENT OF COMPUTER SCIENCE AND APPLICATIONS', "Nick Brown's blog", 'The Aspirational Data Scientist', 'Project Zero', 'Music Theory', 'Probably Approximately a Scientific Blog']
+['Mathematics and computer science', 'Computer Science - Amazing Resources']
+['Computer Science using C++', 'AKHSS Computer Science Group (AKUEB)', 'GSS College             Computer Science Department', 'Department of Computer Science', 'CityFaberLab City Faber Lab', 'Ritu Computer Science', 'Public Understanding of Science Blog']
+Iteration 0
+Iteration 1
+Iteration 2
+Iteration 3
+Iteration 4
+Iteration 5
+[[], [46, 78, 94], [58], [], [6, 8, 9, 15, 19, 21, 22, 23, 27, 34, 37, 47, 48, 53, 60, 72, 81, 82, 83, 86, 88, 92, 98], [12, 18, 28, 42, 68, 76], [62, 74], [85], [], [44, 80], [1, 2, 7, 26, 33, 35, 40, 45, 57, 59, 61, 65, 67, 69, 70, 71, 73, 77, 87, 90, 95], [], [39, 54], [5, 32, 63], [10, 24, 25, 29, 41, 43, 75, 93, 97], [0, 16, 17, 20, 30, 38, 50, 55, 56, 64], [3, 14, 31, 49, 52, 91, 96], [11, 13, 51, 79], [84], [4, 36, 66, 89]]
+[]
+['The Music Salon', 'Music Theory', 'Music 000001']
+['WLUR 91.5 FM Music Review']
+[]
+['Eco-Evo Evo-Eco', 'Computer Science using C++', 'Exploring Computer Science', 'Computer Science', 'AKHSS Computer Science Group (AKUEB)', 'GSS College             Computer Science Department', 'The Female Perspective of Computer Science', 'Department of Computer Science', "Jessica Kirkpatrick's Blog", 'CityFaberLab City Faber Lab', 'Yes, Another Science Blog', 'CS Undergrad Blog', "Mrs. King's Music Class", 'COMPUTER SCIENCE', 'Wading Through Research', 'The Aspirational Data Scientist', 'Public Understanding of Science Blog', 'Probably Approximately a Scientific Blog', "Emily's Kodaly Music", 'RajLab', ' We  Music @ HSES! ', 'UMD PSYC E-News', 'The New PI Sets Up a Lab']
+['Hard Force', 'DVD Concert TH Power By Deer 5001', 'Deer5001RockCocert', 'Anttis music blog', 'Ritu Computer Science', "The King's Music Blog"]
+['Thomas Nield', 'Project Zero']
+['ALC Computer Science']
+[]
+['Edendale Up Close Concerts', 'Current Research into Cures for Type-1 Diabetes']
+['Music and More', 'Only Solitaire blog', 'Yehudas Jewish Music Blog', 'Gapplegate Music Review', "Xisuma's Musical Journey", 'Music for Maniacs', 'Deep Cutz - [[Uncutz]]', "Music You (Possibly) Won't Hear Anyplace Else", 'Drexciya Research Lab', 'Not Another Music Blog.', 'no longer forgotten music', "Sophie's Floorboard", 'the concert', 'Gapplegate Classical-Modern Music Review', 'All Music - All Blogs', "The Devil's Music", 'Soundaboard', 'Solidboy Music Blog', 'F-Measure', 'Long Live Led Zeppelin', 'The Vintage Music Blog']
+[]
+['Mathematics and computer science', 'Computer Science - Amazing Resources']
+['Data Science Struggle', "Pedro's Computer Science Blog", 'DEPARTMENT OF COMPUTER SCIENCE AND APPLICATIONS']
+['Forest-Rangeland Soil Ecology Lab', 'The Ripple Effect', 'Cliff Mass Weather and Climate Blog', 'CONCERT OVERLOAD', 'Notes From Kenya: MSU Hyena Research', "Scott's Music Reviews", 'Climate change research in partnership with Thoreau', 'Things that change the way I think', 'Cobb Lab Research Blog']
+['Maywood Middle School Band', 'Haliburton Concert Series', 'Notes for Nourishment', 'Newell Concert Association', 'Talking Heads Concert History', 'Glendale Noon Concerts', 'Springdale Park Music', 'Parkside Music', 'Heavy Soundboard Bootlegs', 'Live Bootlegs']
+
